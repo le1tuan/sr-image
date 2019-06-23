@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+body {
+  margin: 0;
+}
+.main-img {
+  width: 100%;
+  position: relative;
+}
+
+#app {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  left: 50px;
+  height: 80%;
+  width: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  padding: 20px;
+}
+
+textarea {
+  width: 300px;
+  resize: none;
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  height: 30%;
+  text-align: center;
+}
+
+.body {
+  font-size: 24px;
+  height: 40%;
+  text-align: center;
+}
+
+.footer {
+  font-size: 24px;
+  height: 40%;
+  text-align: center;
+}
+
+
+
+.background {
+  position: absolute;
+  left: 50px;
+  height: 80%;
+  width: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  background: white;
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=/src.a2b27638.css.map */

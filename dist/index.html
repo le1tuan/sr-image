@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <script>HTMLCanvasElement.prototype.getContext = function (origFn) {
+  return function (type, attribs) {
+    attribs = attribs || {};
+    attribs.preserveDrawingBuffer = true;
+    return origFn.call(this, type, attribs);
+  };
+}(HTMLCanvasElement.prototype.getContext);</script>
+<link rel="stylesheet" href="/src.a2b27638.css"></head>
+<body>
+    <div id="content">
+      <label for="textarea">Title</label><br>  
+      <textarea id="textarea"></textarea><br>
+      <label for="body">Content 1</label>  <br>
+      <textarea id="body"></textarea><br>
+      <label for="footer">Content 2</label><br>  
+      <textarea id="footer"></textarea><br>
+    </div>
+    
+    <div id="input">
+      <label for="file">Please up load your image</label>
+      <input id="file" type="file">
+    </div>
+    
+    <div id="app"></div>
+    <button id="ok">Render</button>
+    <script src="/src.a2b27638.js">
+    </script>
+</body>
+</html>
